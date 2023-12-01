@@ -30,21 +30,34 @@
     })(window, document);
     adroll.track("pageView");
 </script>
-
-<script type="text/javascript"> 
-try{
- adroll.track("pageView", {"segment_name":"1120f60c"}) 
-} catch(err) {} 
-</script>
   
 <title> Adroll Test Website</title>
 </head>
 <body>
+<div>
+ <div>
+  <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function (event) {
+                adroll.track("purchase", {
+                    "ORDER_ID": 140975188,
+                    "USER_ID": 14528172,
+                    "conversion_value": "817.51",
+                    "currency": "GBP",
+                    "products": [
+                        {
+                            "price": "817.51",
+                            "product_id": "553995",
+                            "quantity": "1"
+                        }]
+                });
+            });
+        </script>
+ </div>
+</div>
 
 
 
-
-<h1 style="color:green">Adroll Test 1M+ website segment & iframe - 292023V3</h1>
+<h1 style="color:green">Adroll Test Revenue Tracking - 292023V4</h1>
   <button>Test</button>
 </body>
 </html>
